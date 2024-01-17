@@ -304,38 +304,37 @@
 
         <div class="boxes">
             <div class="location-grid">
-                <div class="location">
+                <div class="location top">
                     <img src="Rectangle 5.png" alt="Maldives">
                     <p>Maldives</p>
                 </div>
-                <div class="location">
+                <div class="location top">
                     <img src="Rectangle 8.png" alt="Indonesia">
                     <p>Indonesia</p>
                 </div>
-                <div class="location">
+                <div class="location bottom">
                     <img src="Rectangle 6.png" alt="">
                     <p>Srilanka</p>
                 </div>
-                <div class="location">
+                <div class="location bottom">
                     <img src="Rectangle 7.png" alt="North America">
                     <p>North America</p>
                 </div>
-                <div class="location">
+                <div class="location bottom">
                     <img src="Rectangle 9.png" alt="Kashmir">
                     <p>Kashmir</p>
                 </div>
-                <div class="location">
+                <div class="location bottom">
                     <img src="Rectangle 10.png" alt="Bangladesh">
                     <p>Bangladesh</p>
                 </div>
-                <div class="location">
+                <div class="location bottom">
                     <img src="Rectangle 11.png" alt="Bandarban">
                     <p>Bandarban</p>
                 </div>
             </div>
         </div>
-
-
+        
         <style>
             .location-grid {
                 display: flex;
@@ -343,23 +342,41 @@
                 justify-content: space-around;
                 margin: 20px 0;
             }
-
+        
             .location {
                 flex: 0 1 calc(30% - 10px);
                 margin: 10px;
                 text-align: center;
                 max-width: 300px;
+                display: flex;
+                flex-direction: column;
             }
-
+        
             .location img {
                 max-width: 100%;
                 height: auto;
+                max-height: 150px;
+                object-fit: cover; 
+                border-radius: 10px; 
             }
-
+        
             .location p {
                 margin-top: 5px;
             }
+        
+            .top {
+                margin-bottom: 20px; 
+                margin-right: 90px;
+            }
+        
+            @media only screen and (max-width: 768px) {
+                .location {
+                    flex-basis: calc(50% - 10px);
+                }
+            }
         </style>
+        
+        
 
 
         <header style="font-size: x-large ;">Why choose Us
