@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Travel</title>
     <style>
-
-.navbar {
+        .navbar {
             overflow: hidden;
             background-color: #ffffff;
         }
@@ -30,7 +30,10 @@
         }
 
         @media only screen and (max-width: 768px) {
-            .navbar a:not(:first-child) {display: none;}
+            .navbar a:not(:first-child) {
+                display: none;
+            }
+
             .navbar a.icon {
                 float: right;
                 display: block;
@@ -38,12 +41,16 @@
         }
 
         @media only screen and (max-width: 768px) {
-            .navbar.responsive {position: relative;}
+            .navbar.responsive {
+                position: relative;
+            }
+
             .navbar.responsive a.icon {
                 position: absolute;
                 right: 0;
                 top: 0;
             }
+
             .navbar.responsive a {
                 float: none;
                 display: block;
@@ -82,7 +89,8 @@
             margin-bottom: 20px;
         }
 
-        select, input {
+        select,
+        input {
             width: 30%;
             margin-bottom: 10px;
         }
@@ -143,15 +151,20 @@
         }
 
         @media only screen and (max-width: 768px) {
-            select, input {
+
+            select,
+            input {
                 width: 100%;
             }
 
-            .banner, .text-area, .newsletter {
+            .banner,
+            .text-area,
+            .newsletter {
                 flex-direction: column;
             }
 
-            .text-area img, .newsletter img {
+            .text-area img,
+            .newsletter img {
                 width: 100%;
             }
 
@@ -161,14 +174,16 @@
         }
     </style>
 </head>
+
 <body>
 
     <header style="display: flex; justify-content: space-between; align-items: center;">
         <h1 style="color: orange; font-size: 24px; margin: 0;">
-            <img src="Group 40071 (2).png" alt="Astro Travel Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+            <img src="Group 40071 (2).png" alt="Astro Travel Logo"
+                style="width: 30px; height: 30px; margin-right: 10px;">
             Astro <span style="color: black;">Travel</span>
         </h1>
-    
+
         <div class="navbar" id="myNavbar">
             <a href="#">Home</a>
             <a href="#">Packages</a>
@@ -180,7 +195,7 @@
             </a>
         </div>
     </header>
-    
+
 
     <script>
         function myFunction() {
@@ -194,82 +209,95 @@
     </script>
     <main>
 
-        <div class="banner" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-size: cover; color: white; padding: 20px; background-image: url('Rectangle 5.png');">
+        <div class="banner"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-size: cover; color: white; padding: 20px; background-image: url('Rectangle 5.png');">
 
-             <!-- Banner Content -->
-    <h2 style="margin-bottom: 10px;">Explore Your Next Adventure</h2>
-    <p>Create lasting Memories with our travel experiences.</p>
+            <!-- Banner Content -->
+            <h2 style="margin-bottom: 10px;">Explore Your Next Adventure</h2>
+            <p>Create lasting Memories with our travel experiences.</p>
 
-    <form style="margin-top: 20px; max-width: 300px; width: 100%; text-align: left; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <form
+                style="margin-top: 20px; max-width: 300px; width: 100%; text-align: left; display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-        <div style="flex-basis: 100%;">
-            <label for="destination">Choose a Destination:</label>
-            <select id="destination" style="width: 100%; margin-bottom: 10px;">
-                <option value="destination1">Destination 1</option>
-                <option value="destination2">Destination 2</option>
-            </select>
+                <div style="flex-basis: 100%;">
+                    <label for="destination">Choose a Destination:</label>
+                    <select id="destination" style="width: 100%; margin-bottom: 10px;">
+                        <option value="destination1">Destination 1</option>
+                        <option value="destination2">Destination 2</option>
+                    </select>
+                </div>
+
+                <!-- When -->
+                <div style="flex-basis: 48%;">
+                    <label for="when">When:</label>
+                    <input type="text" id="when" placeholder="When" style="width: 100%; margin-bottom: 10px;">
+                </div>
+
+                <!-- Type -->
+                <div style="flex-basis: 48%;">
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" placeholder="Type" style="width: 100%; margin-bottom: 10px;">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Find
+                    Now</button>
+
+            </form>
+
+            <style>
+                @media only screen and (max-width: 768px) {
+                    form {
+                        flex-direction: column;
+                    }
+                }
+            </style>
+
+
         </div>
-    
-        <!-- When -->
-        <div style="flex-basis: 48%;">
-            <label for="when">When:</label>
-            <input type="text" id="when" placeholder="When" style="width: 100%; margin-bottom: 10px;">
-        </div>
-    
-        <!-- Type -->
-        <div style="flex-basis: 48%;">
-            <label for="type">Type:</label>
-            <input type="text" id="type" placeholder="Type" style="width: 100%; margin-bottom: 10px;">
-        </div>
-    
-        <!-- Submit Button -->
-        <button type="submit" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Join Waitlist</button>
-    
-    </form>
-    
-    <style>
-        
-        @media only screen and (max-width: 768px) {
-            form {
-                flex-direction: column;
-            }
-        }
-    </style>
-    
 
-        </div>
-        
-        
-        
-        
 
-        <div class="text-area">
-           
-<header style="font-size: x-large ;">Our popular tours</header>
 
-<br>
-Here are some of our catagories:
-<br>
-<br>
-    Family Trip: Discover the magic of Morocco with your loved ones on this unforgettable family adventure. Explore ancient cities, ride camels in the Sahara, and enjoy the hospitality of local families.
-    <br>
-    <br>
 
-    Friends Group Trip: Grab your besties and get ready for the ultimate road trip across the USA. From the bright lights of Vegas to the stunning scenery of the Grand Canyon, this is a journey you’ll never forget.
-   <br><br>
-    Team Mountain Trip: Challenge yourself and your colleagues on this exhilarating mountain trek in Nepal. Experience the culture and beauty of the Himalayas, while bonding with your team and supporting a good cause.</p>
-            <button type="submit" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read more</button>
-<br>
 
-            <img src="Rectangle 4.png" alt="Image">
+        <div class="text-area" style="display: flex; align-items: center;">
+
+            <div style="flex: 1; text-align: left; padding-right: 80px;">
+                <header style="font-size:xx-large; text-align: left;">Our popular tours</header>
+                <br>
+                Here are some of our categories:
+                <br><br>
+                Family Trip: Discover the magic of Morocco with your loved ones on this unforgettable family adventure.
+                Explore ancient cities, ride camels in the Sahara, and enjoy the hospitality of local families.
+                <br><br>
+                Friends Group Trip: Grab your besties and get ready for the ultimate road trip across the USA. From the
+                bright lights of Vegas to the stunning scenery of the Grand Canyon, this is a journey you’ll never forget.
+                <br><br>
+                Team Mountain Trip: Challenge yourself and your colleagues on this exhilarating mountain trek in Nepal.
+                Experience the culture and beauty of the Himalayas, while bonding with your team and supporting a good
+                cause.
+                <br><br>
+                <button type="submit" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read more</button>
+            </div>
+        
             <br>
-            <br>
+            <div style="flex: 1;">
+                <img src="Rectangle 4.png" alt="Image" style="width: 60%; border-radius: 10px;">
+            </div>
+        
+        </div>
         
 
-        </div>
+
+
+
+
+
+
         <header style="font-size: x-large ;">Chose your destination
         </header>
-        
+
         <br><br>
         <P style="text-align: center;">Go wherever you want with whoever you want</P>
         <br><br>
@@ -306,7 +334,7 @@ Here are some of our catagories:
                 </div>
             </div>
         </div>
-        
+
 
         <style>
             .location-grid {
@@ -315,109 +343,31 @@ Here are some of our catagories:
                 justify-content: space-around;
                 margin: 20px 0;
             }
-        
+
             .location {
                 flex: 0 1 calc(30% - 10px);
                 margin: 10px;
                 text-align: center;
-                max-width: 300px; 
+                max-width: 300px;
             }
-        
+
             .location img {
                 max-width: 100%;
                 height: auto;
             }
-        
+
             .location p {
                 margin-top: 5px;
             }
         </style>
 
 
-<header style="font-size: x-large ;">Why choose Us
-</header>
+        <header style="font-size: x-large ;">Why choose Us
+        </header>
 
-<br><br>
-<P style="text-align: center;">No other company can each out level of service</P>
-<br><br>
-
-
-
-
-
-
-
-<div class="feature-box-container">
-
-    <div class="feature-box feature-box1" style="text-align: left;">
-        <img src="handpicked.png" alt="Handpicked Icon" class="box-icon">
-        <h3>Handpicked Hotels</h3>
-        <p>Discover exclusive hotels selected with care for your perfect stay.</p>
-    </div>
-
-    <div class="feature-box feature-box2" style="text-align: left;">
-        <img src="worldclass.png" alt="World Class Service Icon" class="box-icon">
-        <h3>World Class Service</h3>
-        <p>Experience exceptional service that goes beyond your expectations.</p>
-    </div>
-
-    <div class="feature-box feature-box3" style="text-align: left;">
-        <img src="best.png" alt="Best Price Guarantee Icon" class="box-icon">
-        <h3>Best Price Guarantee</h3>
-        <p>Enjoy the assurance of the best prices for your unforgettable journey.</p>
-    </div>
-
-</div>
-
-<style>
-    .feature-box-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .feature-box1 {
-        text-align: left;
-        padding: 50px;
-        border-radius: 10px;
-        margin: 11px;
-        background-color: #fffeda; 
-        max-width: 500px;
-        flex: 0 1 calc(48% - 20px);
-    }
-
-    .feature-box2 {
-        text-align: left;
-        padding: 50px;
-        border-radius: 10px;
-        margin: 11px;
-        background-color: #dbedff; 
-        max-width: 500px;
-        flex: 0 1 calc(48% - 20px);
-    }
-
-    .feature-box3 {
-        text-align: left;
-        padding: 50px;
-        border-radius: 10px;
-        margin: 11px;
-        background-color: #fceded;
-        max-width: 500px;
-        flex: 0 1 calc(48% - 20px); 
-    }
-
-    .box-icon {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .feature-box {
-            flex: 0 1 calc(100% - 20px);
-        }
-    }
-</style>
+        <br><br>
+        <P style="text-align: center;">No other company can each out level of service</P>
+        <br><br>
 
 
 
@@ -425,114 +375,203 @@ Here are some of our catagories:
 
 
 
-<div style="display: flex; align-items: left;">
+        <div class="feature-box-container">
 
-    <div style="flex: 2; text-align: left;">
-        <header style="font-size: x-large; text-align: left; font-size: xx-large;">A simple perfect place to get lost</header>
-        <p>Various places to visit without travel plans.</p>
-        <button type="submit" style=" background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">See more</button>
-    </div>
+            <div class="feature-box feature-box1" style="text-align: left;">
+                <img src="handpicked.png" alt="Handpicked Icon" class="box-icon">
+                <h3>Handpicked Hotels</h3>
+                <p>Discover exclusive hotels selected with care for your perfect stay.</p>
+            </div>
 
-    <div style="flex: 1;">
-        <img src="Group 40089.png" alt="Description of the image" style="height: auto; border-radius: 10px; width: 100%;">
-    </div>
+            <div class="feature-box feature-box2" style="text-align: left;">
+                <img src="worldclass.png" alt="World Class Service Icon" class="box-icon">
+                <h3>World Class Service</h3>
+                <p>Experience exceptional service that goes beyond your expectations.</p>
+            </div>
 
-</div>
+            <div class="feature-box feature-box3" style="text-align: left;">
+                <img src="best.png" alt="Best Price Guarantee Icon" class="box-icon">
+                <h3>Best Price Guarantee</h3>
+                <p>Enjoy the assurance of the best prices for your unforgettable journey.</p>
+            </div>
 
-
-
-
-
-
-
-
-
-
-<!-- newsletter -->
-
-<section style="display: flex;  justify-content: space-around; text-align: center; margin: 40px auto; max-width: 900px; position: relative;">
-
-    <!-- Newsletter Box -->
-    <div style="flex: 1; text-align: left;max-width: 400px; padding: 20px; border: 1px solid orange; border-radius: 10px;">
-        <h2>Newsletter</h2>
-        <p>Get your daily dose of travel news & tips. Sign up today!</p>
-        
-        <!-- Form Placeholder (Replace with actual form code) -->
-        <form style="margin-top: 20px;">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email"> <br>Email:</label>
-            <input type="email" id="email" name="email" required> <br>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-
-    <br>
-    <!-- Image Box -->
-    <div style="flex: 1; position: relative; margin-left: 20px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
-        <img src="Rectangle 8 (1).png" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px; position: relative;">
-
-        <div style="font-size:x-small ;position: absolute; bottom: 60px; right: 10px; background-color: orange; color: white; padding: 5px; border-radius: 5px; transform: rotate(-45deg);">
-           astrotravel.com
-
-           <br>
-           
-           <div style="font-size: large;">Save upto 70%</div>
-            
         </div>
-    </div>
 
-</section>
+        <style>
+            .feature-box-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
 
-<!-- space travel bit -->
+            .feature-box1 {
+                text-align: left;
+                padding: 50px;
+                border-radius: 10px;
+                margin: 11px;
+                background-color: #fffeda;
+                max-width: 500px;
+                flex: 0 1 calc(48% - 20px);
+            }
 
-<section style="display: flex; align-items: center; text-align: center; margin: 40px auto; max-width: 900px;">
+            .feature-box2 {
+                text-align: left;
+                padding: 50px;
+                border-radius: 10px;
+                margin: 11px;
+                background-color: #dbedff;
+                max-width: 500px;
+                flex: 0 1 calc(48% - 20px);
+            }
 
-    <div style="max-width: 660px; margin-bottom: 20px;">
-        <h2 style="color: orange;">Join Our Space Tourism Waitlist</h2>
-        <p>Experience the wonders of space with Astro Travel!</p>
-        
-        <form style="margin-top: 20px;">
-            
-            <button type="submit">Join Waitlist</button>
-        </form>
-        
-        <p style="color: red;">Please note: Space tourism is subject to availability, and certain restrictions apply. </p>
-        
-        <p>Embark on a celestial journey with Astro Travel and be among the first space tourists in 2024!</p>
-    </div>
+            .feature-box3 {
+                text-align: left;
+                padding: 50px;
+                border-radius: 10px;
+                margin: 11px;
+                background-color: #fceded;
+                max-width: 500px;
+                flex: 0 1 calc(48% - 20px);
+            }
 
-    <img src="Screenshot_14.png" alt="Space Tourism" style="width: 400px; border-radius: 10px; margin-left: 20px;">
+            .box-icon {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
 
-</section>
-
-<style>
-    @media only screen and (max-width: 768px) {
-        section {
-            flex-direction: column;
-        }
-
-        img {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
-</style>
+            @media only screen and (max-width: 768px) {
+                .feature-box {
+                    flex: 0 1 calc(100% - 20px);
+                }
+            }
+        </style>
 
 
-<style>
-    @media only screen and (max-width: 768px) {
-        section {
-            flex-direction: column;
-        }
 
-        img {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
-</style>
+
+
+
+
+        <div style="display: flex; align-items: left;">
+
+            <div style="flex: 2; text-align: left;">
+                <header style="font-size: x-large; text-align: left; font-size: xx-large;">A simple perfect place to get
+                    lost</header>
+                <p>Various places to visit without travel plans.</p>
+                <button type="submit"
+                    style=" background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">See
+                    more</button>
+            </div>
+            <br>
+            <div style="flex: 1;">
+                <img src="Group 40089.png" alt="Description of the image"
+                    style="height: auto; border-radius: 10px; width: 100%;">
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- newsletter -->
+
+        <section
+            style="display: flex;  justify-content: space-around; text-align: center; margin: 40px auto; max-width: 900px; position: relative;">
+
+            <!-- Newsletter Box -->
+            <div
+                style="flex: 1; text-align: left;max-width: 400px; padding: 20px; border: 1px solid orange; border-radius: 10px;">
+                <h2>Newsletter</h2>
+                <p>Get your daily dose of travel news & tips. Sign up today!</p>
+
+                <!-- Form Placeholder (Replace with actual form code) -->
+                <form style="margin-top: 20px;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email"> <br>Email:</label>
+                    <input type="email" id="email" name="email" required> <br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <br>
+            <!-- Image Box -->
+            <div
+                style="flex: 1; position: relative; margin-left: 20px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
+                <img src="Rectangle 8 (1).png" alt="Description of the image"
+                    style="width: 100%; height: auto; border-radius: 10px; position: relative;">
+
+                <div
+                    style="font-size:x-small ;position: absolute; bottom: 60px; right: 10px; background-color: orange; color: white; padding: 5px; border-radius: 5px; transform: rotate(-45deg);">
+                    astrotravel.com
+
+                    <br>
+
+                    <div style="font-size: large;">Save upto 70%</div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- space travel bit -->
+
+        <section style="display: flex; align-items: center; text-align: center; margin: 40px auto; max-width: 900px;">
+
+            <div style="max-width: 660px; margin-bottom: 20px;">
+                <h2 style="color: orange;">Join Our Space Tourism Waitlist</h2>
+                <p>Experience the wonders of space with Astro Travel!</p>
+
+                <form style="margin-top: 20px;">
+
+                    <button type="submit">Join Waitlist</button>
+                </form>
+
+                <p style="color: red;">Please note: Space tourism is subject to availability, and certain restrictions
+                    apply. </p>
+
+                <p>Embark on a celestial journey with Astro Travel and be among the first space tourists in 2024!</p>
+            </div>
+
+            <img src="Screenshot_14.png" alt="Space Tourism"
+                style="width: 400px; border-radius: 10px; margin-left: 20px;">
+
+        </section>
+
+        <style>
+            @media only screen and (max-width: 768px) {
+                section {
+                    flex-direction: column;
+                }
+
+                img {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        </style>
+
+
+        <style>
+            @media only screen and (max-width: 768px) {
+                section {
+                    flex-direction: column;
+                }
+
+                img {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        </style>
 
 
 
@@ -541,18 +580,19 @@ Here are some of our catagories:
     <footer style="text-align: center; padding: 20px;">
 
         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
-            <img src="Group 40071 (2).png" alt="Astro Travel Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+            <img src="Group 40071 (2).png" alt="Astro Travel Logo"
+                style="width: 30px; height: 30px; margin-right: 10px;">
             <h2 style="color: orange; font-size: 20px; margin: 0;">Astro Travel</h2>
         </div>
-    
+
         <p>We try provide the best travel service in the industry.</p>
-    
+
         <div style="display: flex; justify-content: space-around; margin: 15px 0;">
 
             <img src="Social.png" alt="Logo 1" style="height: 30px; width: auto; max-width: 100%;">
-        
+
         </div>
-        
+
         <style>
             @media only screen and (max-width: 768px) {
                 div {
@@ -561,14 +601,15 @@ Here are some of our catagories:
                 }
             }
         </style>
-        
-    
+
+
         <hr style="border: 0.3px solid #cacaca; margin: 20px 0;">
-    
-         <p>&copy; 2024 Astro Travel.</p>
-    
+
+        <p>&copy; 2024 Astro Travel.</p>
+
     </footer>
-    
+
 
 </body>
+
 </html>
