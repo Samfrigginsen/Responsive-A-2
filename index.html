@@ -305,49 +305,33 @@ Here are some of our catagories:
                     <p>Bandarban</p>
                 </div>
             </div>
-            
         </div>
+        
 
-      <style>
-        .location-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.location {
-    flex: 0 1 calc(30% - 10px);
-    margin: 10px;
-    text-align: center;
-}
-
-.location img {
-    max-width: 100%;
-    height: auto;
-}
-
-.location p {
-    margin-top: 5px; 
-}
-
-@media only screen and (min-width: 769px) {
-    .location:nth-child(1),
-    .location:nth-child(2),
-    .location:nth-child(6),
-    .location:nth-child(7) {
-        flex-basis: calc(50% - 10px);
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
-    .location {
-        flex: 0 1 calc(100% - 20px);
-    }
-}
-
-      </style>
+        <style>
+            .location-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 20px 0;
+            }
+        
+            .location {
+                flex: 0 1 calc(30% - 10px);
+                margin: 10px;
+                text-align: center;
+                max-width: 300px; /* Set a maximum width for each location */
+            }
+        
+            .location img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .location p {
+                margin-top: 5px;
+            }
+        </style>
 
 
 <header style="font-size: x-large ;">Why choose Us
@@ -356,6 +340,91 @@ Here are some of our catagories:
 <br><br>
 <P style="text-align: center;">No other company can each out level of service</P>
 <br><br>
+
+
+
+
+
+
+
+<div class="feature-box-container">
+
+    <div class="feature-box feature-box1" style="text-align: left;">
+        <img src="handpicked.png" alt="Handpicked Icon" class="box-icon">
+        <h3>Handpicked Hotels</h3>
+        <p>Discover exclusive hotels selected with care for your perfect stay.</p>
+    </div>
+
+    <div class="feature-box feature-box2" style="text-align: left;">
+        <img src="worldclass.png" alt="World Class Service Icon" class="box-icon">
+        <h3>World Class Service</h3>
+        <p>Experience exceptional service that goes beyond your expectations.</p>
+    </div>
+
+    <div class="feature-box feature-box3" style="text-align: left;">
+        <img src="best.png" alt="Best Price Guarantee Icon" class="box-icon">
+        <h3>Best Price Guarantee</h3>
+        <p>Enjoy the assurance of the best prices for your unforgettable journey.</p>
+    </div>
+
+</div>
+
+<style>
+    .feature-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .feature-box1 {
+        text-align: left;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 11px;
+        background-color: #fffeda; /* Change the background color as needed */
+        max-width: 500px;
+        flex: 0 1 calc(48% - 20px); /* Adjusted flex property */
+    }
+
+    .feature-box2 {
+        text-align: left;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 11px;
+        background-color: #dbedff; /* Change the background color as needed */
+        max-width: 500px;
+        flex: 0 1 calc(48% - 20px); /* Adjusted flex property */
+    }
+
+    .feature-box3 {
+        text-align: left;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 11px;
+        background-color: #fceded; /* Change the background color as needed */
+        max-width: 500px;
+        flex: 0 1 calc(48% - 20px); /* Adjusted flex property */
+    }
+
+    .box-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .feature-box {
+            flex: 0 1 calc(100% - 20px);
+        }
+    }
+</style>
+
+
+
+
+
+
+
 
 
 <header style="font-size: x-large ; text-align: left;">A simple perfect place to get lost
@@ -495,7 +564,7 @@ Here are some of our catagories:
     
         <hr style="border: 0.3px solid #cacaca; margin: 20px 0;">
     
-        <p>&copy; 2024 Astro Travel.</p>
+         <p>&copy; 2024 Astro Travel.</p>
     
     </footer>
     
