@@ -183,7 +183,6 @@
     
 
     <script>
-        /* Script to toggle the responsive navigation menu */
         function myFunction() {
             var x = document.getElementById("myNavbar");
             if (x.className === "navbar") {
@@ -195,42 +194,188 @@
     </script>
     <main>
 
-        <div class="banner">
-            <select>
+        <div class="banner" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-size: cover; color: white; padding: 20px; background-image: url('Rectangle 5.png');">
+
+             <!-- Banner Content -->
+    <h2 style="margin-bottom: 10px;">Explore Your Next Adventure</h2>
+    <p>Create lasting Memories with our travel experiences.</p>
+
+    <form style="margin-top: 20px; max-width: 300px; width: 100%; text-align: left; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+        <div style="flex-basis: 100%;">
+            <label for="destination">Choose a Destination:</label>
+            <select id="destination" style="width: 100%; margin-bottom: 10px;">
                 <option value="destination1">Destination 1</option>
                 <option value="destination2">Destination 2</option>
             </select>
-            <input type="text" placeholder="When">
-            <input type="text" placeholder="Type">
         </div>
+    
+        <!-- When -->
+        <div style="flex-basis: 48%;">
+            <label for="when">When:</label>
+            <input type="text" id="when" placeholder="When" style="width: 100%; margin-bottom: 10px;">
+        </div>
+    
+        <!-- Type -->
+        <div style="flex-basis: 48%;">
+            <label for="type">Type:</label>
+            <input type="text" id="type" placeholder="Type" style="width: 100%; margin-bottom: 10px;">
+        </div>
+    
+        <!-- Submit Button -->
+        <button type="submit" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Join Waitlist</button>
+    
+    </form>
+    
+    <style>
+        /* Media Query for Phones */
+        @media only screen and (max-width: 768px) {
+            form {
+                flex-direction: column;
+            }
+        }
+    </style>
+    
+
+        </div>
+        
+        
+        
+        
 
         <div class="text-area">
-            <p>some text.</p>
-            <img src="your-image.jpg" alt="Image">
-        </div>
+           
+<header style="font-size: x-large ;">Our popular tours</header>
 
-        <div class="location-images">
-            <img src="location-image1.jpg" alt="Location 1">
-            <img src="location-image2.jpg" alt="Location 2">
-        </div>
+<br>
+Here are some of our catagories:
+<br>
+<br>
+    Family Trip: Discover the magic of Morocco with your loved ones on this unforgettable family adventure. Explore ancient cities, ride camels in the Sahara, and enjoy the hospitality of local families.
+    <br>
+    <br>
 
-        <div class="text-section">
-            <p>More text</p>
+    Friends Group Trip: Grab your besties and get ready for the ultimate road trip across the USA. From the bright lights of Vegas to the stunning scenery of the Grand Canyon, this is a journey you’ll never forget.
+   <br><br>
+    Team Mountain Trip: Challenge yourself and your colleagues on this exhilarating mountain trek in Nepal. Experience the culture and beauty of the Himalayas, while bonding with your team and supporting a good cause.</p>
+            <button type="submit" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Read more</button>
+<br>
+
+            <img src="Rectangle 4.png" alt="Image">
+            <br>
+            <br>
+        
+
         </div>
+        <header style="font-size: x-large ;">Chose your destination
+        </header>
+        
+        <br><br>
+        <P style="text-align: center;">Go wherever you want with whoever you want</P>
+        <br><br>
 
         <div class="boxes">
-            <div class="box">
-                <p>Box 1</p>
+            <div class="location-grid">
+                <div class="location">
+                    <img src="Rectangle 5.png" alt="Maldives">
+                    <p>Maldives</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 8.png" alt="Indonesia">
+                    <p>Indonesia</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 6.png" alt="">
+                    <p>Srilanka</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 7.png" alt="North America">
+                    <p>North America</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 9.png" alt="Kashmir">
+                    <p>Kashmir</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 10.png" alt="Bangladesh">
+                    <p>Bangladesh</p>
+                </div>
+                <div class="location">
+                    <img src="Rectangle 11.png" alt="Bandarban">
+                    <p>Bandarban</p>
+                </div>
             </div>
-            <div class="box">
-                <p>Box 2</p>
-            </div>
-            <div class="box">
-                <p>Box 3</p>
-            </div>
+            
         </div>
 
-      
+      <style>
+        .location-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.location {
+    flex: 0 1 calc(30% - 10px);
+    margin: 10px;
+    text-align: center;
+}
+
+.location img {
+    max-width: 100%;
+    height: auto;
+}
+
+.location p {
+    margin-top: 5px; 
+}
+
+@media only screen and (min-width: 769px) {
+    .location:nth-child(1),
+    .location:nth-child(2),
+    .location:nth-child(6),
+    .location:nth-child(7) {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .location {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+      </style>
+
+
+<header style="font-size: x-large ;">Why choose Us
+</header>
+
+<br><br>
+<P style="text-align: center;">No other company can each out level of service</P>
+<br><br>
+
+
+<header style="font-size: x-large ; text-align: left;">A simple perfect place to get lost
+</header>
+<br><br>
+<P style="text-align: left;"> Various places to visit with out travel plans. </P>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- newsletter -->
 
 <section style="display: flex;  justify-content: space-around; text-align: center; margin: 40px auto; max-width: 900px; position: relative;">
@@ -251,13 +396,18 @@
         </form>
     </div>
 
+    <br>
     <!-- Image Box -->
     <div style="flex: 1; position: relative; margin-left: 20px; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
         <img src="Rectangle 8 (1).png" alt="Description of the image" style="width: 100%; height: auto; border-radius: 10px; position: relative;">
 
-        <!-- Smaller Box Inside Image with 45-degree angle -->
-        <div style="position: absolute; bottom: 60px; right: 10px; background-color: orange; color: white; padding: 5px; border-radius: 5px; transform: rotate(-45deg);">
-            Save upto 70%
+        <div style="font-size:x-small ;position: absolute; bottom: 60px; right: 10px; background-color: orange; color: white; padding: 5px; border-radius: 5px; transform: rotate(-45deg);">
+           astrotravel.com
+
+           <br>
+           
+           <div style="font-size: large;">Save upto 70%</div>
+            
         </div>
     </div>
 
@@ -272,14 +422,8 @@
         <h2 style="color: orange;">Join Our Space Tourism Waitlist</h2>
         <p>Experience the wonders of space with Astro Travel!</p>
         
-        <!-- Form Placeholder (Replace with actual form code) -->
         <form style="margin-top: 20px;">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
             
-            <label for="email"><br>Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
             <button type="submit">Join Waitlist</button>
         </form>
         
@@ -293,7 +437,6 @@
 
 </section>
 
-<!-- Media Query for Phones -->
 <style>
     @media only screen and (max-width: 768px) {
         section {
@@ -308,7 +451,6 @@
 </style>
 
 
-<!-- Media Query for Phones -->
 <style>
     @media only screen and (max-width: 768px) {
         section {
@@ -328,26 +470,32 @@
 
     <footer style="text-align: center; padding: 20px;">
 
-        <!-- Site Name with Logo on the Left -->
         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
             <img src="Group 40071 (2).png" alt="Astro Travel Logo" style="width: 30px; height: 30px; margin-right: 10px;">
             <h2 style="color: orange; font-size: 20px; margin: 0;">Astro Travel</h2>
         </div>
     
-        <!-- Demo Text -->
         <p>We try provide the best travel service in the industry.</p>
     
-        <!-- Small Logos -->
         <div style="display: flex; justify-content: space-around; margin: 15px 0;">
-            <img src="Social.png" alt="Logo 1" style=" height: 30px;">
-           
+
+            <img src="Social.png" alt="Logo 1" style="height: 30px; width: auto; max-width: 100%;">
+        
         </div>
+        
+        <style>
+            @media only screen and (max-width: 768px) {
+                div {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+        
     
-        <!-- Horizontal Line -->
-        <hr style="border: 0.5px solid #aaa; margin: 20px 0;">
+        <hr style="border: 0.3px solid #cacaca; margin: 20px 0;">
     
-        <!-- Year -->
-        <p>&copy; 2024 Astro Travel</p>
+        <p>&copy; 2024 Astro Travel.</p>
     
     </footer>
     
